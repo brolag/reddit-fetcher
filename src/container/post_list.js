@@ -4,9 +4,19 @@ import PostListItem from '../components/post_list_item';
 
 class PostList extends Component {
   render() {
+    if(this.props.posts.length === 0) {
+      return <div>Loading...</div>
+    }
+
+    console.log(this.props.posts);
+
+    const postListItems = this.props.posts.data.children.map((post) => {
+      return <PostListItem />;
+    });
+
     return (
       <ul>
-      lis
+        {postListItems}
       </ul>
     )
   }
