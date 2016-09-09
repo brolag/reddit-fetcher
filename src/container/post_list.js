@@ -1,17 +1,20 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import PostListItem from '../components/post_list_item';
 
-export default class PostList extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = { posts: [] };
-  }
-
+class PostList extends Component {
   render() {
     return (
       <ul>
-        HERE IS THE LIST
+      lis
       </ul>
     )
   }
 }
+
+
+function mapStateToProps({ posts }) {
+  return { posts };
+}
+
+export default connect(mapStateToProps)(PostList);
