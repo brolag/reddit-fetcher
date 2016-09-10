@@ -1,4 +1,4 @@
-# Alfredo Bonilla - Web Code Challenge
+# Reddit Fetcher
 
 Instructions:
 
