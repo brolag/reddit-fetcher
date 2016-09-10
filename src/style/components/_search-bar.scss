@@ -1,0 +1,43 @@
+.search-bar {
+  background-color: $app;
+  color: $header-text;
+  padding: 10px;
+}
+.search-title {
+  float: left;
+}
+.search-form {
+  float: right;
+  text-align: right;
+  input {
+    background: $header-text;
+    background-position: left top;
+    border: 0;
+    border-radius: 10px;
+    color: $app;
+    font-size: 15px;
+    margin-right: 5px;
+    padding: 5px 10px;
+    position: relative;
+    width: 100px;
+    -webkit-transition: width .4s;
+  }
+
+  input:focus {
+    width: 250px;
+  }
+
+  button {
+    background: $header-text;
+    border: 0;
+    border-radius: 10px;
+    color: $app;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 5px 15px;
+  }
+  button:hover {
+    text-decoration: underline;
+  }
+}
