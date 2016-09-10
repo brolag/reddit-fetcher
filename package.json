@@ -1,6 +1,6 @@
 {
   "name": "alfredo-bonilla-web-challenge",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Alfredo Bonilla Web Challenge",
   "main": "index.js",
   "scripts": {
@@ -8,18 +8,17 @@
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
     "test:watch": "npm run test -- --watch"
   },
+  "repository" : "",
+  "license" : "",
   "author": "brolag",
   "devDependencies": {
     "babel-core": "^6.2.1",
     "babel-loader": "^6.2.0",
     "babel-preset-es2015": "^6.1.18",
     "babel-preset-react": "^6.1.18",
-    "chai": "^3.5.0",
-    "chai-jquery": "^2.0.0",
     "css-loader": "^0.25.0",
     "jquery": "^2.2.1",
     "jsdom": "^8.1.0",
-    "mocha": "^2.4.5",
     "node-sass": "^3.9.3",
     "react-addons-test-utils": "^0.14.7",
     "sass-loader": "^4.0.2",
@@ -30,7 +29,6 @@
   "dependencies": {
     "axios": "^0.14.0",
     "babel-preset-stage-1": "^6.1.18",
-    "lodash": "^3.10.1",
     "react": "^0.14.3",
     "react-dom": "^0.14.3",
     "react-redux": "^4.0.0",
