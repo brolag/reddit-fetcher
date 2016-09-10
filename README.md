@@ -2,12 +2,13 @@
 
 Instructions:
 
-Run the following commands in order to start the application:
+1. Run the following commands in order to start the application:
 
-```
-	> npm install
-	> npm start
-```
+    ```
+        > npm install
+        > npm start
+    ```
+2. Visit http://localhost:8080/
 
 ## TODO:
 
@@ -39,5 +40,5 @@ R/ Yes, for sure, actually I'll keep playing with it because it has a lot of pot
 R/ I used redux promise in order to handle the promise of the request more easily. Also I', using axios for the request
 to the Reddit endpoint, and finally I'm using Babel in order to use ES6 syntax.
 
-## On a scale of 1 – 10, rate the complexity of this project
+### On a scale of 1 – 10, rate the complexity of this project
 R/ I think is kind of a 4 to 5 because of the time and new technologies.

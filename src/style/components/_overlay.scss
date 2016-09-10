@@ -6,12 +6,10 @@
   width: 100%;
   z-index: 2;
 }
-
 .o-item {
   position: fixed;
   z-index: 5;
 }
-
 .overlay {
   .post-item {
     display: block;
@@ -58,12 +56,6 @@
       p {
         margin-top: 10px;
       }
-    }
-    .open {
-
-    }
-    .email {
-
     }
   }
 }

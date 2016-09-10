@@ -24,7 +24,7 @@ class PostListItem extends Component {
     var img_src = thumbnail;
 
     // Validates missing images.
-    if (thumbnail === 'nsfw' || thumbnail === 'self') {
+    if (thumbnail === 'nsfw' || thumbnail === 'self' || !thumbnail ) {
       img_src = default_image;
     }
 

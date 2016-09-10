@@ -28,11 +28,9 @@
     width: 100px;
     -webkit-transition: width .5s;
   }
-
   input:focus {
     width: 300px;
   }
-
   button {
     background: $header-text;
     border: 0;

@@ -64,7 +64,7 @@ class Overlay extends Component {
               <a href={`mailto:?subject=Awesome Reddit Post: ${title}&body=Hey buddy! %0D%0A %0D%0A Check this out! ${link} %0D%0A %0D%0A Cheers!`}>
                 <img src="/public/images/mail-logo.png" />
               </a>
-              <p>Open On Reddit</p>
+              <p>Email to a friend</p>
             </div>
           </div>
         </section>
