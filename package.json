@@ -1,7 +1,7 @@
 {
-  "name": "alfredo-bonilla-web-challenge",
-  "version": "1.0.1",
-  "description": "Alfredo Bonilla Web Challenge",
+  "name": "reddit-fetcher",
+  "version": "1.0.2",
+  "description": "Reddit Fetcher",
   "main": "index.js",
   "scripts": {
     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
@@ -9,7 +9,7 @@
     "test:watch": "npm run test -- --watch"
   },
   "repository" : "",
-  "license" : "",
+  "license" : "ISC",
   "author": "brolag",
   "devDependencies": {
     "babel-core": "^6.2.1",
