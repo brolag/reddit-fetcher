@@ -3,6 +3,11 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { fetchPosts, setActivePost } from '../actions/index';
 
+/**
+ * SearchBar Component.
+ *
+ * Allows user to change the Reddit posts category.
+ */
 class SearchBar extends Component {
   constructor(props) {
     super(props);

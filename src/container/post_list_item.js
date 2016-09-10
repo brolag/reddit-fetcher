@@ -3,10 +3,14 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { setActivePost } from '../actions/index';
 
+/**
+ * PostListItem Component.
+ *
+ * Renders a single post list item in the list.
+ */
 class PostListItem extends Component {
   constructor(props) {
     super(props);
-
     this.onPostSelect = this.onPostSelect.bind(this);
   }
 

@@ -3,19 +3,25 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { setActivePost } from '../actions/index';
 
+/**
+ * Overlay component
+ *
+ * Shows a black screen with some options for the selected post.
+ */
 class Overlay extends Component {
   constructor(props) {
     super(props);
-
     this.exitOverlay = this.exitOverlay.bind(this);
   }
 
+  /**
+   * Close overlay and remove the active post.
+   */
   exitOverlay() {
     this.props.setActivePost({});
   }
 
   render() {
-
     if(!this.props.activePost.data) {
       return <div></div>;
     }
@@ -33,7 +39,6 @@ class Overlay extends Component {
       return(
         <section className="overlay">
           <div className="smoke-screen" onClick={this.exitOverlay}></div>
-
           <div className="o-item post-item">
             <img className="pls-img" src={img_src} />
             <div className="o-pls pls-data">
@@ -45,11 +50,9 @@ class Overlay extends Component {
               </div>
             </div>
           </div>
-
           <div className="o-item instructions">
             Click on to the desired action.
           </div>
-
           <div className="o-item actions">
             <div className="open">
               <a href={link} target="_blank">
@@ -57,7 +60,6 @@ class Overlay extends Component {
               </a>
               <p>Open On Reddit</p>
             </div>
-
             <div className="email">
               <a href={`mailto:?subject=Awesome Reddit Post: ${title}&body=Hey buddy! %0D%0A %0D%0A Check this out! ${link} %0D%0A %0D%0A Cheers!`}>
                 <img src="/public/images/mail-logo.png" />
@@ -65,9 +67,6 @@ class Overlay extends Component {
               <p>Open On Reddit</p>
             </div>
           </div>
-
-
-
         </section>
       );
     }
@@ -82,6 +81,5 @@ function mapStateToProps(props) {
 function mapDispatchToProps(dispatch) {
   return bindActionCreators({ setActivePost }, dispatch);
 }
-
 
 export default connect(mapStateToProps, mapDispatchToProps)(Overlay);

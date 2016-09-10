@@ -2,7 +2,11 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PostListItem from './post_list_item';
 
-
+/**
+ * PostList Component
+ *
+ * List Reddit posts.
+ */
 class PostList extends Component {
     constructor(props) {
       super(props);
