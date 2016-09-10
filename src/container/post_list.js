@@ -1,39 +1,51 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import PostListItem from '../container/post_list_item';
+import PostListItem from './post_list_item';
+
 
 class PostList extends Component {
-  render() {
-    // Show spinner while loading posts.
-    if(this.props.posts.length === 0) {
-      return (
-        <section className="post-list loading">
-          <div className="col">
-            <img src="../../public/images/loader.gif" />
-          </div>
-        </section>
-      )
+    constructor(props) {
+      super(props);
     }
 
-    const postListItems = this.props.posts.data.children.map((post) => {
-      return <PostListItem key={post.data.id} post={post} />;
-    });
+    render() {
+      // Show spinner while loading posts.
+      if(this.props.posts.length === 0) {
+        return (
+          <section className="post-list loading">
+            <div className="col">
+              <img src="../../public/images/loader.gif" />
+            </div>
+          </section>
+        )
+      }
 
-    return (
-      <section className="post-list">
-        <div className="col">
-          <ul>
-            {postListItems}
-          </ul>
+      const postListItems = this.props.posts.data.children.map((post) => {
+        return (
+          <PostListItem
+            key={post.data.id}
+            post={post}
+          />
+        );
+      });
+
+      return (
+        <div>
+          <section className="post-list">
+            <div className="col">
+              <ul>
+                {postListItems}
+              </ul>
+            </div>
+          </section>
         </div>
-      </section>
-    )
+      );
   }
 }
 
-
-function mapStateToProps({ posts }) {
-  return { posts };
+function mapStateToProps(props) {
+  return props;
 }
 
 export default connect(mapStateToProps)(PostList);
+

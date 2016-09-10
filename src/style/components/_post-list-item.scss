@@ -1,5 +1,6 @@
 .post-list-item {
   border-bottom: 1px solid $border;
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   flex-flow: row wrap;

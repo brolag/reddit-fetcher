@@ -1,3 +1,69 @@
-.overlay {
+.smoke-screen {
+  background: black;
+  height: 100%;
+  opacity: 0.5;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
 
+.o-item {
+  position: fixed;
+  z-index: 5;
+}
+
+.overlay {
+  .post-item {
+    display: block;
+    background: $hover;
+    border-radius: 20px;
+    width: 250px;
+    top: 25%;
+    left: 0;
+    margin: 0 auto;
+    padding: 20px 10px;
+    margin-left: 23%;
+  }
+  .o-pls {
+    font-size: 12px;
+    margin: 0 auto;
+    text-align: center;
+    width: 150px;
+  }
+  .pls-img {
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  .instructions {
+    color: $hover;
+    font-weight: 400;
+    top: 36%;
+    left: 45%;
+    width: 150px;
+    text-align: center;
+    line-height: 25px;
+  }
+  .actions {
+    top: 25%;
+    left: 60%;
+    width: 300px;
+    > div {
+      border-radius: 25px;
+      padding: 15px;
+      background: $hover;
+      text-align: center;
+      color: $app;
+      font-weight:400;
+      margin-bottom: 25px;
+      p {
+        margin-top: 10px;
+      }
+    }
+    .open {
+
+    }
+    .email {
+
+    }
+  }
 }

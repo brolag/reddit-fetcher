@@ -1,8 +1,17 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import { setActivePost } from '../actions/index';
 
-export default class PostListItem extends Component {
+class PostListItem extends Component {
   constructor(props) {
     super(props);
+
+    this.onPostSelect = this.onPostSelect.bind(this);
+  }
+
+  onPostSelect() {
+    this.props.setActivePost(this.props.post);
   }
 
   render() {
@@ -16,7 +25,7 @@ export default class PostListItem extends Component {
     }
 
     return (
-      <li className="post-list-item">
+      <li className="post-list-item" onClick={this.onPostSelect}>
         <img className="pls-img" src={img_src} />
         <div className="pls-data">
           <div className="pls-author">{author}</div>
@@ -31,3 +40,11 @@ export default class PostListItem extends Component {
     );
   }
 };
+
+
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators({ setActivePost }, dispatch);
+}
+
+export default connect(null, mapDispatchToProps)(PostListItem);
+
