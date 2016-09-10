@@ -2,9 +2,15 @@
   background-color: $app;
   color: $header-text;
   padding: 10px;
+  position: fixed;
+  width: 100%;
+  .col {
+    height: 25px;
+  }
 }
 .search-title {
   float: left;
+  line-height: 25px;
 }
 .search-form {
   float: right;
@@ -17,14 +23,14 @@
     color: $app;
     font-size: 15px;
     margin-right: 5px;
-    padding: 5px 10px;
+    padding: 3px 10px;
     position: relative;
     width: 100px;
-    -webkit-transition: width .4s;
+    -webkit-transition: width .5s;
   }
 
   input:focus {
-    width: 250px;
+    width: 300px;
   }
 
   button {
@@ -35,7 +41,7 @@
     cursor: pointer;
     font-size: 15px;
     font-weight: 400;
-    padding: 5px 15px;
+    padding: 3px 15px;
   }
   button:hover {
     text-decoration: underline;

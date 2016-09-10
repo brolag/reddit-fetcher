@@ -1,0 +1,50 @@
+.post-list-item {
+  border-bottom: 1px solid $border;
+  display: flex;
+  flex-direction: column;
+  flex-flow: row wrap;
+  padding: 20px 0;
+}
+.post-list-item:hover {
+  background: $hover;
+}
+.pls-img {
+  border-radius: 45px;
+  display: block;
+  height: 90px;
+  object-fit: cover;
+  width: 90px;
+  border: 3px solid $border;
+}
+.pls-data {
+  margin-left: 20px;
+  font-size: 17px;
+  width: 600px;
+}
+.pls-author {
+  color: $app;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+.pls-title {
+  margin-bottom: 20px;
+}
+.pls-counters {
+  color: $counters;
+  display: flex;
+  font-size: 13px;
+  flex-direction: row;
+}
+.pls-counter {
+  background: url('/public/images/icon-sprite.png') no-repeat;
+  padding-left: 20px;
+  margin-right: 20px;
+  height: 16px;
+}
+.pls-ups {
+  background-position: 0 -16px;
+}
+.pls-downs {
+  background-position: 0 -31px;
+}
+

@@ -4,6 +4,7 @@ import PostListItem from '../components/post_list_item';
 
 class PostList extends Component {
   render() {
+    // Show spinner while loading posts.
     if(this.props.posts.length === 0) {
       return (
         <section className="post-list loading">
@@ -15,7 +16,7 @@ class PostList extends Component {
     }
 
     const postListItems = this.props.posts.data.children.map((post) => {
-      return <PostListItem key={post.data.title} post={post} />;
+      return <PostListItem key={post.data.id} post={post} />;
     });
 
     return (
