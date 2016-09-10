@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import PostListItem from '../components/post_list_item';
+import PostListItem from '../container/post_list_item';
 
 class PostList extends Component {
   render() {
